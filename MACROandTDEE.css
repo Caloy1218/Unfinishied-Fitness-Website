@@ -1,0 +1,73 @@
+.Tdee-Container {
+  height: 100vh;
+  padding-top: 110px;
+  display: flex;
+}
+.Tdee-Container p {
+  letter-spacing: 1.1px;
+}
+
+.Tdee-Defenition,
+.Macros-Container {
+  flex: 1;
+  padding: 20px;
+  text-align: justify;
+}
+.Macros-Container h2 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+.Tdee-Defenition h2 {
+  font-size: 2.5rem;
+  margin: 10px 0;
+}
+.Macros-Container h3,
+.Tdee-Defenition h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+.Macros-Container p,
+.Tdee-Defenition p {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+.GetMacrosAndTDEE {
+  width: 100%;
+  padding: 80px;
+  height: 40vh;
+  margin: 30px auto;
+  text-align: center;
+  background-color: var(--animation-color);
+}
+.GetMacrosAndTDEE h3 {
+  font-size: 2.5rem;
+  font-style: italic;
+  font-weight: 400;
+}
+.GetMacrosAndTDEE button {
+  padding: 20px;
+  margin: 15px 0 0 0;
+  width: 220px;
+  font-size: 20px;
+}
+.GetMacrosAndTDEE button:hover {
+  color: white;
+  background-color: #1b1c1e;
+}
+@media screen and (max-width: 450px) {
+  .Tdee-Container {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 98%;
+  }
+  .Macros-Container h2,
+  .Tdee-Defenition h2 {
+    font-size: 1.5rem;
+    margin-top: -30px;
+  }
+  .Macros-Container h3,
+  .Tdee-Defenition h3 {
+    font-size: 1.2rem;
+  }
+}

@@ -1,0 +1,167 @@
+.onlineCoaching-container {
+  height: 100vh;
+  width: 100%;
+}
+.onlineCoaching-content {
+  margin: 0 auto;
+  width: 50%;
+  padding-top: 120px;
+  text-align: center;
+  color: #1b1c1e;
+}
+.onlineCoaching-content h4 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+.onlineCoaching-content p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+}
+.onlineCoaching-CardContainer {
+  display: flex;
+  justify-content: space-around;
+}
+.card {
+  width: 400px;
+  height: 500px;
+  perspective: 500px;
+}
+.content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+.card:hover .content {
+  transform: rotateY(180deg);
+  transition: transform 0.5s;
+}
+.front {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: white;
+  color: #1b1c1e;
+  text-align: center;
+  font-size: 30px;
+  border-radius: 5px;
+  padding: 10px 0 0 0;
+  backface-visibility: hidden;
+}
+.back {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: white;
+  color: #03446a;
+  text-align: ju6a;
+  text-align: center;
+  font-size: 30px;
+  padding: 0px 30px;
+  border-radius: 5px;
+  backface-visibility: hidden;
+  padding-top: 10px;
+}
+.back {
+  background: var(--animation-color);
+  color: white;
+  transform: rotateY(180deg);
+}
+.learnMorebtn {
+  margin: 20px 0 0 0;
+  padding: 20px;
+  font-size: 20px;
+}
+.learnMorebtn a {
+  color: #1b1c1e;
+  text-decoration: none;
+}
+
+.learnMorebtn:hover,
+.learnMorebtn a:hover {
+  background-color: #1b1c1e;
+  color: white;
+}
+/* OnlineCoachin-Button */
+.onlineCoaching-btn {
+  width: 90%;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+.joinOLcoaching {
+  padding: 1.5em 3em;
+  border: 2px solid var(--animation-color);
+  position: relative;
+  overflow: hidden;
+  background-color: var(--animation-color);
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  transition: 0.3s;
+  z-index: 1;
+  font-family: inherit;
+  color: rgb(243, 236, 236);
+}
+.joinOLcoaching::before {
+  content: "";
+  width: 0;
+  height: 300%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: rgb(243, 236, 236);
+  transition: 0.5s ease;
+  display: block;
+  z-index: -1;
+}
+.joinOLcoaching:hover::before {
+  width: 105%;
+}
+.joinOLcoaching:hover {
+  color: #1b1c1e;
+  background-color: transparent;
+}
+
+@media screen and (max-width: 450px) {
+  .onlineCoaching-container {
+    height: auto;
+  }
+  .onlineCoaching-content {
+    width: 90%;
+  }
+  .onlineCoaching-content h4 {
+    font-size: 1.5rem;
+  }
+  .onlineCoaching-CardContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 90%;
+    margin: 0 auto 20px;
+  }
+  .onlineCoaching-CardContainer .card {
+    width: 300px;
+    height: 350px;
+    margin: 0 auto 50px;
+  }
+  .front {
+    font-size: 20px;
+  }
+  .back {
+    font-size: 20px;
+  }
+
+  .onlineCoaching-btn {
+    margin: 0 auto;
+    padding-bottom: 20px;
+  }
+  .learnMorebtn {
+    margin: 20px 0 0 0;
+    padding: 15px;
+    font-size: 18px;
+  }
+}

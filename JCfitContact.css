@@ -1,0 +1,64 @@
+.homepage {
+  background-color: var(--animation-color);
+  height: 100vh;
+}
+.upper-header {
+  text-align: center;
+  height: 20vh;
+}
+.upper-header h2 {
+  font-size: 4rem;
+  color: rgba(243, 236, 236);
+}
+.contact-container {
+  width: 50%;
+  margin: 50px auto;
+  min-width: 400px;
+  background-color: white;
+  height: 60vh;
+  box-shadow: 2px 2px 4px grey;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+  text-align: left;
+}
+.form-container label,
+.form-container input,
+textarea {
+  margin-bottom: 28px;
+}
+.form-container label:first-child {
+  margin-top: 30px;
+}
+.form-container input,
+textarea {
+  padding: 20px;
+  box-shadow: 2px 2px 2px grey;
+  border: none;
+}
+#submit {
+  width: 40%;
+  margin: 0 auto;
+}
+#submit:hover {
+  color: white;
+}
+
+.error {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+@media screen and (max-width: 450px) {
+  .upper-header h2 {
+    font-size: 1.5rem;
+    width: 300px;
+  }
+  .upper-header .lordicon {
+    width: 50px;
+  }
+}

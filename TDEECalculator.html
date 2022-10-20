@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />  
+    <title>Olrac's Fitness</title>
+    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="stylesheet" href="OlracFitness.css" />
+    <link rel="stylesheet" href="TDEECalculator.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400;500;600;700&family=Fredoka+One&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet" />
+  </head>
+  </head>
+  <body>
+    
+    <div class="homepage">
+      <header>
+        <h1><span class="white">JCFit</span><span class="black">Dev</span></h1>
+        <nav>
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="aboutOlracFitness.html" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="OnlineCoaching.html" class="nav-link">Online Coaching</a>
+            </li>
+            <li class="nav-item">
+              <a href="Transformation.html" class="nav-link">Transformations</a>
+            </li>
+            <li class="nav-item">
+              <a href="JCfitContact.html" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="soc-meds">
+          <a href="https://www.facebook.com/olracsaquing/ " target="_blank"
+            ><i class="fa fa-facebook" aria-hidden="true"></i
+          ></a>
+          <a href="https://www.instagram.com/caloysaquing/" target="_blank"
+            ><i class="fa fa-instagram" aria-hidden="true"></i
+          ></a>
+          <a href="https://twitter.com/CaloySaquing"
+            ><i class="fa fa-twitter" aria-hidden="true"></i
+          ></a>
+        </div>
+        <button class="joincoaching">Contact Me</button>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </header>
+      </div>
+        <script src="index.js"></script>
+       <div class="tdeeCalculator-container">
+        <div class="tdee-Calculator">
+            <h1>TDEE CALCULATOR</h1>
+            <form action="">
+                <div class="form-container"><label for="male">Gender</label><input type="radio" name="Gender" id="male" checked required>Male
+                <input type="radio" name="Gender" id="female">Female
+              </div>
+                <div class="form-container"><label for="age">Age</label><input type="number"name="Age" id="age" required></div>
+                <div class="form-container"><label for="weight">Weight</label><input type="number"name="Weight: " id="weight" placeholder="kg"></div>
+                <div class="form-container"><label for="height">Height</label><input type="number"name="Height: " id="height" placeholder="cm"></div>
+                <div class="form-container"> <label for="myActivity">Activity Level</label>
+                <select name="" id="myActivity">
+                    <option value=""></option>
+                    <option value="1.2">Sedentary(office job)</option>
+                    <option value="1.375">Light(1-2 days/week)</option>
+                    <option value="1.55">Moderate(3-5 days/week)</option>
+                    <option value="1.75">Heavy(6-7 days/week)</option>
+                </select></div>
+                
+                <div class="form-container">
+                <input type="submit" value="Submit"  id="submit">
+            </div>
+                
+
+            </form>
+        </div>
+        <h2 id="stats"></h2>
+          
+        <div class="tdee-result">
+          <div class="tdee-result-container">
+             
+            <div class="maintenanceCals-container">
+            
+              <div class="maintenanceCals">
+                <h2 id="mainte-text-cals"></h2>
+                <div class="CalsPerday-Perweek">
+                  <h3 class="CalsPerday"></h3>
+                  <h3 id="CalsPerweek"></h3>
+                  <h2 id="Macros1"></h2>
+                  <h5 id="maintenance-Macros"></h5>
+                </div>
+                <div class="LoseOrGain">
+                  <h3>Now you already got your Maintenance Calories, its either you Go Lose or Go Gain!</h3>
+                  <button onclick="cutting()">Lose Fat!</button> 
+                  <button onclick="bulking()">Gain Muscles!</button>
+                  
+                </div>
+              </div>
+              <div class="maintenanceCals-defenition">
+                <h2 id="LoseOrGainResult"></h2>
+                <h3 id="calsPerDay"></h3>
+                <h3 id="calsPerWeek"></h3>
+                <h2 id="Macros"></h2>
+                <h5 id="moderateCarb"></h5>
+                <h5 id="dailyMacros"></h5>
+                <h5 id="lowCarb"></h5>
+                <h5 id="lowMacros"></h5>
+                <h5 id="highCarb"></h5>
+                <h5 id="highMacros"></h5>
+              </div>
+            </div>
+            </div>
+        </div>
+        </div>
+        <div class="darkMode">
+      <button onclick="darkMode()">DarkMode</button>
+    </div>
+    <div class="lightMode">
+      <button onclick="lightMode()">LightMode</button>
+    </div>
+    <footer>
+      <h3>
+        For more infomations about me please click the link below.
+      </h3>
+        <p><span class="white">CopyRight by</span> John Carlo Saquing</p>
+    </footer>
+    <script src="index.js"></script>
+    <script src="JCFITDEV.js"></script>
+  </body>
+</html>

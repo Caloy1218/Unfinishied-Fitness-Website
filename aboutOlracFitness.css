@@ -1,0 +1,122 @@
+.upper-header {
+  background-color: #1b1c1e;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 70px 0 0 0;
+  padding: 50px 0 0 0;
+  border-bottom: 0.5px solid #888;
+}
+.upper-header #myVideo {
+  width: 45%;
+  margin: 240px 0 0 45px;
+}
+.upper-header h1 {
+  color: rgb(243, 236, 236);
+  font-size: 8rem;
+}
+.mint {
+  color: var(--animation-color);
+}
+.about-container {
+  height: 100vh;
+}
+.about-semi-container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 85%;
+  height: 70vh;
+  padding-top: 80px;
+  margin: 0 0 0 130px;
+  text-align: justify;
+}
+.about-semi-container h3 {
+  font-size: 2.5rem;
+  width: 45%;
+}
+.about-semi-container h4 {
+  font-size: 2rem;
+}
+.about-semi-container p {
+  font-size: 1.5rem;
+  line-height: 35px;
+}
+.motivational-quote {
+  width: 80%;
+  margin: 80px auto;
+  text-align: center;
+  font-size: 2.5rem;
+}
+.about-semi-container a {
+  text-decoration: none;
+  color: var(--animation-color);
+}
+@media screen and (max-width: 450px) {
+  #upperHeader {
+    height: 20vh;
+    padding: 0;
+  }
+  #upperHeader h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+  .about-container {
+    height: auto;
+  }
+  .about-container .about-semi-container {
+    overflow: hidden;
+    padding: 0;
+    height: auto;
+  }
+  .about-container .about-semi-container h3 {
+    margin: 0;
+    margin: 20px 0 10px 0;
+  }
+  .about-semi-container p {
+    line-height: 25px;
+    margin-bottom: 10px;
+  }
+  .about-container .motivational-quote {
+    margin: 0 auto;
+    padding: 20px 0;
+  }
+  .about-container .motivational-quote h3 {
+    font-size: 1.3rem;
+    margin-top: 0px;
+    padding-bottom: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .upper-header h1 {
+    font-size: 4.5rem;
+  }
+  .upper-header video {
+    display: none;
+  }
+  .about-semi-container {
+    margin: 0;
+    padding: 0;
+    width: 95%;
+    margin: 0px auto;
+    padding: 100px 0 0px 0;
+  }
+  .about-semi-container h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    width: 100%;
+    margin: 50px 0 20px 0;
+  }
+  .about-semi-container h4 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+  .about-semi-container p {
+    font-size: 1rem;
+  }
+  .motivational-quote h3 {
+    font-size: 1.2rem;
+    margin-top: 50px;
+  }
+}
